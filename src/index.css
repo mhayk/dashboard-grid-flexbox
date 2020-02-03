@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidebar navbar"
+    "sidebar main"
+    "sidebar footer";
+  height: 100vh;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #648ca6;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #394263;
+}
+
+.main {
+  grid-area: main;
+  background-color: #8fd4d9;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+}
